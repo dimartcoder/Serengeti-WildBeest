@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Serengeti Wildebeest Camps - Responsive Enhancements
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Mobile Viewports (<= 640px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  h1.hero-headline {
+    font-size: 2.75rem;
+    line-height: 1.25;
+  }
+
+  .section-py {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-content {
+    padding-bottom: 5rem;
+  }
+
+  .hero-socials {
+    bottom: 1.25rem;
+    right: 1rem;
+    gap: 0.75rem;
+  }
+
+  .strip-item img {
+    height: 12rem;
+  }
+
+  .featured-card {
+    height: 20rem;
+  }
+
+  .transport-stat {
+    font-size: 2.5rem;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .floating-whatsapp {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Viewports (641px - 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 1023px) {
+  h1.hero-headline {
+    font-size: 3.5rem;
+  }
+
+  .section-py {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop & Large Screens (>= 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .site-header {
+    padding: 0.75rem 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   High-contrast, reduced motion, and touch targets
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .btn, .nav-link, .nav-mobile-link, .whatsapp-btn-circle {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
